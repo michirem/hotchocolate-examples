@@ -2,9 +2,11 @@ version: '3.1'
 
 services:
   postgres:
+    ports:
+      - "5432:5432"
     image: postgres
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: P0stG&e$
+      POSTGRES_PASSWORD: postgrespw
       POSTGRES_DB: postgres
